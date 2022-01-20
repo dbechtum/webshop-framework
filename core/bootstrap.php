@@ -1,11 +1,11 @@
 <?php
 
-require 'functions.php';
-$config = require 'config.php';
-require 'core/Router.php';
-require 'core/database/Connection.php';
-require 'core/database/QueryBuilder.php';
+use App\Core\App;
 
-return new QueryBuilder(
-    Connection::make($config['database'])
-);
+require 'core/functions.php';
+
+App::bind('config', require 'config.php');
+
+App::bind('database', new QueryBuilder(
+    Connection::make(App::get('config')['database'])
+));
