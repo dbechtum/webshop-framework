@@ -2,10 +2,10 @@
 
 return[
     'database' => [
-        'name' => 'posterspace',
-        'username' => 'root',
-        'password' => 'Gorilla1!',
-        'connection' => 'mysql:host=127.0.0.1',
+        'name' => $_ENV['DB_NAME'],
+        'username' => $_ENV['DB_USER'],
+        'password' => $_ENV['DB_PASS'],
+        'connection' => $_ENV['DB_HOST'],
         'options' => [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]
