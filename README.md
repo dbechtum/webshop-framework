@@ -1,6 +1,6 @@
 # webshop-framework
 My webshop framework
 
-# 2 Installation
+# Installation
 - composer install
 - npm install
