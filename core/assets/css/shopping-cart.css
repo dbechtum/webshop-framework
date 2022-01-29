@@ -1,0 +1,65 @@
+.cartContentImg{
+    max-width: 5em;
+}
+.cartBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+    z-index: 4000;
+}
+
+.cart {
+    background-color: rgb(252 252 252);
+    position: fixed;
+    width: 500px;
+    height: 80vh;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    right: 0;
+    top: 0;
+    z-index: 4020;
+    opacity: 1;
+    display: none;
+    overflow: auto;
+}
+
+.cartCloseButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-align:start;
+    width: 16px;
+    height: 16px;
+    font-size: 1.25em;
+    z-index: 5000;
+}
+.cartCloseButton p{
+    transform: translateY(-8px);
+    width: 16px;
+    height: 16px;
+}
+
+.removeCartItemButton{
+    width: 32px;
+    height: 32px;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+.totalDiscount{
+    color: green;
+}
+
+.cart p{
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}

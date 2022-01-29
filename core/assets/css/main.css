@@ -1,0 +1,84 @@
+h1 { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+h3 { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+blockquote { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+pre { font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+html,body{
+    min-height: 100vh;
+    
+}
+#footer{
+    display: block;
+}
+img.logo{
+    filter:saturate(90%);
+}
+
+a.navbar-brand h1 {
+    user-select: none;
+    font-weight: 600;
+    display: inline-block;
+    transform: translateY(0.175em);
+}
+li.nav-item{
+    user-select: none;
+}
+
+a.nav-link:hover{
+    cursor: pointer;
+    text-shadow: 0px 1px 4px #00000080;
+    transition: text-shadow 0.5s;
+}
+
+.navCart{
+    transform: translate(-0.9em,-0.2em);
+}
+
+span.cartAmount{
+    display: none;
+    position: absolute;
+    transform: translate(0.7em,0.4em);
+}
+
+span.createbutton{
+    transform: translateY(0.175em);
+}
+
+.navCartImg{
+    background: url("/core/assets/images/icons/cart.svg");
+    transition: background 0.75s ease-in-out;
+    transform: scale(2);
+}
+
+.navCartImg:hover{
+    background: url("/core/assets/images/icons/cart-fill.svg");
+    transition: background 0.2s ease-in-out;
+}
+
+.navUserDropdownImg{
+    background: url("/core/assets/images/icons/person.svg");
+    transition: background 0.75s ease-in-out;
+    transform: scale(2);
+}
+
+.navUserDropdownImg:hover{
+    background: url("/core/assets/images/icons/person-fill.svg");
+    transition: background 0.2s ease-in-out;
+}
+.navSignupImg{
+    background: url("/core/assets/images/icons/person-plus.svg");
+    transition: background 0.75s ease-in-out;
+    transform: scale(1.5);
+}
+
+.navSignupImg:hover{
+    background: url("/core/assets/images/icons/person-plus-fill.svg");
+    transition: background 0.2s ease-in-out;
+}
+
+@media (max-width: 270px){
+    a.navbar-brand{
+        font-size: 0;
+    }
+}

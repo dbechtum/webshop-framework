@@ -16,4 +16,13 @@ class PagesController{
     public function contact(){
         return view('contact');
     }
+
+    public function register_successful(){
+        return view('register-successful');
+    }
+
+    public function login(){
+        return view('login');
+    }
+
 }
